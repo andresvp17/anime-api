@@ -7,7 +7,7 @@
   "scripts": {
     "start:mysql": "node --watch ./server-mysql.js",
     "start:local": "node --watch ./server-local.js",
-    "start": "node ./server-mysql.js"
+    "start": "node ./server-local.js"
   },
   "keywords": [],
   "author": "",
