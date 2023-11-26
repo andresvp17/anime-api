@@ -1,0 +1,33 @@
+### ALL ANIMES
+GET http://localhost:3001/animes
+
+### BY ID
+GET http://localhost:3001/animes/04be350e-721a-11ee-91da-00ffb8bf1ace
+
+### GET BY GENRE
+GET http://localhost:3001/animes?genre=MYSTERY
+
+### DELETE AN ANIME
+DELETE http://localhost:3001/animes/8d33b11e-7298-11ee-91da-00ffb8bf1ace
+
+### UPDATE AN ANIME
+PATCH  http://localhost:3001/animes/86190f1d-7298-11ee-91da-00ffb8bf1ace
+Content-Type: application/json
+
+{
+    "title": "Naruto"
+}
+
+### POST AN ANIME
+POST http://localhost:3001/animes/
+Content-Type: application/json
+
+{
+    "title": "Berserk",
+    "episodes": 375,
+    "author": "Kentaro Miura",
+    "poster": "https://pics.filmaffinity.com/Berserk_Serie_de_TV-284937954-large.jpg",
+    "rate": 5,
+    "year": 1997,
+    "genre": ["action"]
+}

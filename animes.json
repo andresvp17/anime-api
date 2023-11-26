@@ -1,0 +1,68 @@
+[
+    {
+        "id": "04a117b4-327d-46bc-8b40-a498256f8d9",
+        "title": "Naruto",
+        "author": "Masashi Kishimoto",
+        "episodes": 220,
+        "poster": "https://www.formulatv.com/images/series/posters/100/135/dest_1.jpg",
+        "genre": [
+            "Action"
+        ],
+        "rate": 5
+    },
+    {
+        "id": "521ae290-febf-42fe-828a-f5fc34179fe4",
+        "title": "Naruto Shippuden",
+        "author": "Masashi Kishimoto",
+        "episodes": 500,
+        "poster": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/3f283002b47c62b1e5d311c45f95c97e.jpe",
+        "genre": [
+            "Action"
+        ],
+        "rate": 5
+    },
+    {
+        "id": "0aaf41d8-3adf-4ce2-971c-7d993c5da5aa",
+        "title": "My Hero Acamedia",
+        "author": "Kohei Horikoshi",
+        "episodes": 138,
+        "poster": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aa31911c746c4d7d027b190f2e184834.jpe",
+        "genre": [
+            "Action"
+        ],
+        "rate": 4.5
+    },
+    {
+        "id": "7289cedb-6aec-4f28-8efc-23e35a83b32e",
+        "title": "One Piece",
+        "author": "Eichiro Oda",
+        "episodes": 1075,
+        "poster": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1ecde018e863e2aaee31f00a23378c35.jpe",
+        "genre": [
+            "Action"
+        ],
+        "rate": 4.5
+    },
+    {
+        "id": "f5c7e256-bc9b-442c-96de-631c987b7fd1",
+        "title": "Death Note",
+        "author": "Tsugumi Oba",
+        "episodes": 37,
+        "poster": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/97129a46f2418ffe5a67ec64f49a3038.jpe",
+        "genre": [
+            "Mystery"
+        ],
+        "rate": 5
+    },
+    {
+        "id": "32d5b6c7-3b3f-496c-ab06-d53a325cda90",
+        "title": "Berserk",
+        "author": "Kentarou Miura",
+        "episodes": 20,
+        "poster": "https://www.manga-news.com/public/images/dvd/Berserk_anime_1997.jpg",
+        "genre": [
+            "Action"
+        ],
+        "rate": 5
+    }
+]
