@@ -4,7 +4,15 @@ import { randomUUID } from 'node:crypto'
 const animes = readJSON('./animes.json')
 
 export class AnimeModel {
-  static async getAll ({ genre }) {
+  static async getAll ({ genre, title }) {
+    if (title) {
+      return (
+        animes.filter(
+          anime => anime.title.toLocaleLowerCase() === title.toLocaleLowerCase()
+        )
+      )
+    }
+
     if (genre) {
       return animes.filter(
         anime => anime.genre.some((a) => a.toLocaleLowerCase() === genre.toLocaleLowerCase())

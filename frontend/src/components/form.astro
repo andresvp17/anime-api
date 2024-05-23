@@ -1,0 +1,128 @@
+<form id="form" class="form">
+    <label class="form-label" for="url-input" id="input-label"
+        >https://anime-api-production-d0f2.up.railway.app/animes
+    </label>
+    <div class="form-input_container">
+        <input class="form-input" type="text" name="url-input" id="url-input" />
+        <button type="button" class="icon-container">
+            <svg
+                class="ClipboardButton-module__iconcopy--2SgcD"
+                width="1.5rem"
+                height="1.5rem"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                ><path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
+                ></path>
+            </svg>
+        </button>
+    </div>
+    <button class="form-button">Submit</button>
+    <p>
+        To start try with <span class="blue_text">?title=berserk</span> or <span
+            class="blue_text">?genere=action</span
+        >
+    </p>
+</form>
+
+<style>
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .form-label {
+        pointer-events: none;
+        background-color: #e6e6e6;
+        color: #555;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        max-width: 28ch;
+        width: fit-content;
+        padding: 0.25em 0.35em;
+        border-top-left-radius: var(--rounded);
+        border-bottom-left-radius: var(--rounded);
+    }
+
+    .form-input {
+        outline: none;
+        border: none;
+        flex: 1 1;
+        max-width: 500px;
+        padding: 0.35em 0.5em;
+        font-size: 1rem;
+        background-color: #f2f2f2;
+
+        &:focus {
+            box-shadow: 0 0 3px #555;
+        }
+    }
+
+    .form-input_container {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-container {
+        background-color: #f2f2f2;
+        color: #999;
+        border: none;
+        outline: none;
+        padding: 0 0.35rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .icon-container:hover {
+        background-color: #e2e2e2;
+    }
+
+    .form-button {
+        padding: 0.35em 0.75em;
+        background-color: var(--primary);
+        font-weight: 700;
+        color: white;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: var(--rounded);
+        border-bottom-right-radius: var(--rounded);
+    }
+
+    .blue_text {
+        color: rgb(58, 182, 231);
+        font-weight: 600;
+    }
+</style>
+
+<script>
+    import { getInput } from "../services";
+
+    const form = document.getElementById("form") as HTMLFormElement;
+    const list = document.getElementById("list") as HTMLElement;
+
+    form?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const input = formData.get("url-input") as string;
+
+        if (input.startsWith("?") || input.startsWith("/")) {
+            const result = await getInput(input);
+
+            const jsonData = JSON.stringify(result, null, 2);
+            list.innerHTML = jsonData;
+        }
+    });
+</script>

@@ -6,8 +6,8 @@ export class AnimeController {
   }
 
   getAll = async (req, res) => {
-    const { genre } = req.query
-    const animes = await this.animeModel.getAll({ genre })
+    const { genre, title } = req.query
+    const animes = await this.animeModel.getAll({ genre, title })
     res.json({ animes })
   }
 

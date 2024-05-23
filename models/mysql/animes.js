@@ -11,7 +11,34 @@ const config = {
 const connection = await mysql.createConnection(config)
 
 export class AnimeModel {
-  static async getAll ({ genre }) {
+  static async getAll ({ genre, title }) {
+    if (title) {
+      const lowerCase = title.toLowerCase()
+
+      const [animeTitle] = await connection.query(
+        `
+        SELECT title 
+        FROM animes
+        WHERE LOWER(title) = ? 
+        `, [lowerCase]
+      )
+
+      if (animeTitle.length === 0) return []
+
+      const [{ id }] = animeTitle
+
+      const [result] = await connection.query(
+        `
+        SELECT animes.title, animes.author, (BIN_TO_UUID(animes.id)) id
+        FROM anime
+        JOIN animes ON anime_id = animes.id
+        JOIN genre ON genre_id = ?;
+        `, [id]
+      )
+
+      return result
+    }
+
     if (genre) {
       const lowerCase = genre.toLowerCase()
 
@@ -28,8 +55,7 @@ export class AnimeModel {
         SELECT animes.title, animes.author, (BIN_TO_UUID(animes.id)) id
         FROM anime_genre
         JOIN animes ON anime_id = animes.id
-        JOIN genre ON genre_id = ?
-        WHERE genre.name = 'action';
+        JOIN genre ON genre_id = ?;
         `, [id]
       )
 
@@ -37,7 +63,7 @@ export class AnimeModel {
     }
 
     const [animes] = await connection.query(
-      'SELECT title, BIN_TO_UUID(id) id , author, episodes, poster, rate FROM animes;'
+      'SELECT title, BIN_TO_UUID(id) id, author, episodes, poster, rate FROM animes;'
     )
 
     return animes
@@ -45,8 +71,11 @@ export class AnimeModel {
 
   static async getById ({ id }) {
     const [animes] = await connection.query(
-      `SELECT title, author, episodes, poster, rate, BIN_TO_UUID(id) id 
-      FROM animes WHERE id = UUID_TO_BIN(?);`,
+      `
+      SELECT title, author, episodes, poster, rate, BIN_TO_UUID(id) id 
+      FROM animes 
+      WHERE id = UUID_TO_BIN(?);
+      `,
       [id]
     )
 
