@@ -36,7 +36,7 @@
         "id": "7289cedb-6aec-4f28-8efc-23e35a83b32e",
         "title": "One Piece",
         "author": "Eichiro Oda",
-        "episodes": 1075,
+        "episodes": 1105,
         "poster": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1ecde018e863e2aaee31f00a23378c35.jpe",
         "genre": [
             "Action"
@@ -64,5 +64,38 @@
             "Action"
         ],
         "rate": 5
+    },
+    {
+        "id": "d13dcad7-a86f-47f4-b757-dbbd4c91359f",
+        "title": "Cowboy Bebop",
+        "author": "Cain Kuga",
+        "episodes": 26,
+        "poster": "https://pics.filmaffinity.com/Cowboy_Bebop_Serie_de_TV-548837932-large.jpg",
+        "genre": [
+            "Drama"
+        ],
+        "rate": 5
+    },
+    {
+        "id": "4924af27-0802-4350-b09c-726fed9314ef",
+        "title": "Neon Genesis Evangelion",
+        "author": "Yoshiyuki Sadamoto",
+        "episodes": 26,
+        "poster": "https://m.media-amazon.com/images/M/MV5BODZkZjUxNmEtMGEyOS00ZDY5LTkxZDMtZTJkZDBiZTkyOWRkXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        "genre": [
+            "Drama"
+        ],
+        "rate": 5
+    },
+    {
+        "id": "084a909f-6720-422c-ab94-b97f76bf6aae",
+        "title": "Bleach",
+        "author": "Tite Kubo",
+        "episodes": 366,
+        "poster": "https://pics.filmaffinity.com/burichi_bleach-235942666-large.jpg",
+        "genre": [
+            "Action"
+        ],
+        "rate": 4.5
     }
 ]
