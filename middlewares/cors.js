@@ -4,7 +4,7 @@ const ACCEPTED_ORIGINS = [
   'http://localhost:1234',
   'http://localhost:8080',
   'http://localhost:4321',
-  'https://main--apinime.netlify.app/'
+  'https://main--apinime.netlify.app'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => {
