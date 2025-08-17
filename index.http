@@ -1,0 +1,35 @@
+### GET REQUEST
+GET http://127.0.0.1:8787/api HTTP/1.1
+Content-Type: application/json
+
+### GET BY ID
+GET http://127.0.0.1:8787/api/4ce9cf37-5fd0-4622-b50c-f15fab61e9c6
+
+### POST REQUEST
+POST http://127.0.0.1:8787/api
+Content-Type: application/json
+
+{
+  "title": "Naruto Shippuden",
+    "year": 2007,
+    "author": "Masashi Kishimoto",
+    "episodes": 500,
+    "rate": 9,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTk3MDA1ZjAtNTRhYS00YzNiLTgwOGEtYWRmYTQ3NjA0NTAwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "genre": ["Action", "Adventure", "Drama", "Fantasy"]
+}
+
+### DELETE REQUEST
+DELETE http://127.0.0.1:8787/api/73a36adb-3243-43ab-a660-79e687bcb6ce
+
+###PATCH REQUEST
+PATCH http://127.0.0.1:8787/api/4ce9cf37-5fd0-4622-b50c-f15fab61e9c6
+Content-Type: application/json
+
+{
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ]
+}

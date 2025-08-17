@@ -1,0 +1,98 @@
+[
+  {
+    "id": "728b2a9a-796c-49af-9cbc-22f85100c2b2",
+    "title": "Cowboy Bebop",
+    "year": 1998,
+    "author": "Shinichirō Watanabe",
+    "episodes": 26,
+    "rate": 9,
+    "poster": "https://example.com/posters/cowboy_bebop.jpg",
+    "genre": ["Action", "Adventure", "Sci-Fi"]
+  },
+  {
+    "id": "7bab5fb0-f5b2-4069-b505-a9e50e33017d",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "year": 2009,
+    "author": "Hiromu Arakawa",
+    "episodes": 64,
+    "rate": 9,
+    "poster": "https://example.com/posters/fmab.jpg",
+    "genre": ["Action", "Adventure", "Drama", "Fantasy"]
+  },
+  {
+    "id": "d1f6491d-bc19-47cb-b0d8-9fede05cbbe7",
+    "title": "Attack on Titan",
+    "year": 2013,
+    "author": "Hajime Isayama",
+    "episodes": 75,
+    "rate": 9,
+    "poster": "https://example.com/posters/aot.jpg",
+    "genre": ["Action", "Drama", "Fantasy", "Horror"]
+  },
+  {
+    "id": "14d01567-715f-420d-b7e4-efc884cad463",
+    "title": "Death Note",
+    "year": 2006,
+    "author": "Tsugumi Ohba",
+    "episodes": 37,
+    "rate": 8,
+    "genre": ["Mystery", "Psychological", "Thriller"]
+  },
+  {
+    "id": "eaba32ba-12bd-48f0-a401-165d8ac98069",
+    "title": "Spirited Away",
+    "year": 2001,
+    "author": "Hayao Miyazaki",
+    "episodes": 1,
+    "rate": 9,
+    "poster": "https://example.com/posters/spirited_away.jpg",
+    "genre": ["Adventure", "Fantasy"]
+  },
+  {
+    "id": "4549bca5-4562-49bb-b0e6-8464b7edff95",
+    "title": "Demon Slayer",
+    "year": 2019,
+    "episodes": 44,
+    "rate": 9,
+    "poster": "https://example.com/posters/demon_slayer.jpg",
+    "genre": ["Action", "Fantasy"]
+  },
+  {
+    "id": "0fa6a1fc-ab35-4bf7-ae88-499f7db58f01",
+    "title": "Neon Genesis Evangelion",
+    "year": 1995,
+    "author": "Hideaki Anno",
+    "episodes": 26,
+    "rate": 8,
+    "genre": ["Action", "Drama", "Mecha", "Psychological", "Sci-Fi"]
+  },
+  {
+    "id": "64b3e300-450c-411e-8233-2379e5cee2dc",
+    "title": "One Punch Man",
+    "year": 2015,
+    "episodes": 24,
+    "rate": 9,
+    "poster": "https://example.com/posters/opm.jpg",
+    "genre": ["Action", "Comedy", "Superhero"]
+  },
+  {
+    "id": "9f90cded-425b-487a-917a-619411a8cafd",
+    "title": "Naruto",
+    "year": 2002,
+    "author": "Masashi Kishimoto",
+    "episodes": 220,
+    "rate": 8,
+    "poster": "https://example.com/posters/naruto.jpg",
+    "genre": ["Action", "Adventure", "Fantasy", "Martial Arts"]
+  },
+  {
+    "id": "3addc4f5-7d28-4e5e-a4e9-b54663fb006b",
+    "title": "Naruto Shippuden",
+    "year": 2007,
+    "author": "Masashi Kishimoto",
+    "episodes": 500,
+    "rate": 9,
+    "poster": "https://example.com/posters/naruto_shippuden.jpg",
+    "genre": ["Action", "Adventure", "Drama", "Fantasy"]
+  }
+]
