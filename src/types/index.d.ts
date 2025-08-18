@@ -13,6 +13,7 @@ export type Anime = {
 
 export interface Env {
   ANIME_DB: D1Database
+  NODE_ENV: 'development' | 'production'
 }
 
 export abstract class AbstractAnimeModel {

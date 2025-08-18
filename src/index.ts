@@ -22,6 +22,14 @@ export class App {
   private setupMiddlewares() {
     this.middlewares.setupCors()
 
+    this.hono.use('*', async (c, next) => {
+      const isDev = c.env.NODE_ENV === 'development'
+      if (c.req.method !== 'GET' && !isDev) {
+        return c.json({ message: 'Method Not Allowed' }, 405)
+      }
+      await next()
+    })
+
     this.hono.use('*', async (ctx, next) => {
       if (!this.isSetup) {
         try {
@@ -43,6 +51,7 @@ export class App {
       appInstance: this.hono,
       model: DatabaseAnimeModel,
     })
+
     this.hono.get('/', (c) => {
       return c.json({
         message: 'Anime API with Cloudflare D1',

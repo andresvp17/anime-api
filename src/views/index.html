@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <link rel="icon" href="./favicon.ico" />
+    <title>APINIME | RESTful ⛩️</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <h1 class="title">APINIME | RESTful 🎴</h1>
+        </header>
+        <section class="search-section">
+          <form class="form" id="form">
+            <label class="form-label" for="search-input">https://</label>
+            <input
+              class="form-input"
+              id="search-input"
+              name="search-input"
+              type="text"
+              placeholder="title=naruto%20shippuden"
+              autocomplete="off"
+            />
+            <button>SEARCH!</button>
+          </form>
+          <small
+            >Try searching something like
+            <span>title=naruto%20shippuden</span></small
+          >
+          <div class="code-container">
+            <strong style="display: none" data-loading="">Loading...</strong>
+            <!-- <button class="copy-btn" onclick="copyCode()">Copy</button> -->
+            <pre><code id="code-display"></code></pre>
+          </div>
+        </section>
+        <footer>
+          <p>Built with 💜 by andresvp17</p>
+        </footer>
+      </div>
+    </main>
+    <script type="module" src="./js/highlight.js"></script>
+  </body>
+</html>
